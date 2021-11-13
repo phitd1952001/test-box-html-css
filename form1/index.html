@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="surver-form" action="" method="post">
+            <h1 id="title">Phiếu Điền Thông Tin Cá Nhân</h1>
+            <b>Chú ý:</b> Điền rõ thông tin, chính xác.
+            <p>
+                Điền đầy đủ thông tin bao gồm: họ tên....
+            </p>
+            <!-- start personal Details -->
+            <fieldset>
+                <!-- tên khung -->
+                <legend> Thông Tin Cá Nhân</legend>
+                <!-- kết thúc tên khung -->
+                <!-- tạo ra 1 cái hộp chứ thông tin -->
+                <div>
+                    <!-- tên của 1 label -->
+                    <label id="TEN-label" for="TEN">Họ và tên</label>
+                    <!-- kết thúc lable -->
+                    <!-- nhập dữ liệu cho lable ten -->
+                    <input type="text" id="TEN" name="TEN" placeholder="mời bạn nhập tên" />
+                    <!-- kết thúc nhập dữ liệu ten -->
+                </div>
+                <!-- kết thúc 1 cái hộp chứ thông tin -->
+                <div>
+                    <label id="diachi-lable" for="diachi"> Địa Chỉ</label>
+                    <input type="address" id="diachi" name="diachi" placeholder="Mời bạn nhập địa chỉ" />
+                </div>
+                <div>
+                    <label id="email-lable" for="email"> Email</label>
+                    <input type="email" id="diachi" name="diachi" placeholder="Mời bạn nhập địa chỉ" />
+                </div>
+
+                <div>
+                    <label id="email-lable" for="email"> Email</label>
+                    <input type="email" id="diachi" name="diachi" placeholder="Mời bạn nhập địa chỉ" />
+                </div>
+
+                <div>
+                    <label id="sodienthoai-lable" for="sodienthoai"> Số điện thoại</label>
+                    <input type="number" id="sodienthoai" name="sodienthoai" placeholder="Mời bạn số điện thoại" />
+                </div>
+                <div>
+                    <label id="gander-lable" for="">gender</label>
+                    <p>
+                        <input type="radio" name="gender" value="male" checked /> male <br>
+                        <input type="radio" name="gender" value="female" /> female <br>
+                        <input type="radio" name="gender" value="orther" /> orther <br>
+                    </p>
+                </div>
+                <div>
+                    <label id="date" for="">date</label>
+                    <input id="date-number" type="date" name="use-date" />
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <label id="checked" for="">Chek all that apply</label> <br>
+                <input type="checkbox" name="tato" value="tato" checked /> tato <br>
+                <input type="checkbox" name="tato" value="tato" checked /> tato <br>
+                <input type="checkbox" name="tato" value="tato" checked /> tato <br>
+                <input type="checkbox" name="tato" value="tato" checked /> tato <br>
+            </fieldset>
+
+            <!-- end personal Details -->
+            <!-- thanh cuộn xuống -->
+            <fieldset>
+                <label for="">sự lựa chọn</label>
+                <select id="dropdown">
+                    <option value="chọn phải">chọn phải</option>
+                </select>
+            </fieldset>
+
+            <!-- tạo ra 1 cái ô viết essay -->
+            <fieldset>
+                <legend> esssy</legend>
+                <div>
+                    <label for="">èbhudsuefveyibic</label> <br>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <button type="submit" id="submit">nop bai</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
